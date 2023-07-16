@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(245, 225, 200);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+nav ul{
+    
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.image img{
+    width: 54px;
+    padding: 0 8px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    border-radius: 12px;
+    box-sizing:border-box;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    padding: 30px;
+    background-image: url('bg.jpg') ;
+    background-size: cover;
+}
+.songItemContainer{
+    margin-top: 60px;
+}
+.songItem{
+      height: 56px;
+      margin: 12px 0;
+      display: flex;
+      background-color: white;
+      color: black;
+      justify-content: space-between;
+      border-radius: 26px;
+      align-items: center;
+}
+.songItem img{
+          width: 43px;
+          margin: 0 23px; 
+          border-radius: 26px;
+}
+.Timestamp{
+    margin: 0 23px;
+}
+.Timestamp i{
+    cursor: pointer;
+}
+.playSong i{
+    cursor: pointer;
+}
+.bottom{
+    height: 100px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.songinfo{
+     position: absolute;
+     left: 10vw; 
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#mysong{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#masterSongName{
+    font-family: 'Varela Round', sans-serif;
+}
